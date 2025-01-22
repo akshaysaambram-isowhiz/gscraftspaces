@@ -72,7 +72,7 @@ export default function Contact() {
 
               <div className="flex flex-col items-start gap-4 md:flex-row">
                 <a
-                  href="https://www.instagram.com/yourprofile"
+                  href="https://www.instagram.com/gs_craftspaces/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-purple-600 hover:underline"
@@ -81,7 +81,7 @@ export default function Contact() {
                   <span>Instagram</span>
                 </a>
                 <a
-                  href="https://www.instagram.com/yourprofile"
+                  href="https://www.youtube.com/@gscraftspaces"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-purple-600 hover:underline"
