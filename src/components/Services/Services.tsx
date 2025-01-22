@@ -28,7 +28,7 @@ export default function Services() {
             return (
               <ServiceCard
                 key={index}
-                icon={<Icon className="h-8 w-8" />}
+                icon={<Icon className="size-8" />}
                 title={service.title}
                 description={service.description}
                 tag={service.tag}

@@ -22,8 +22,8 @@ export const Stats = () => {
             transition={{ delay: index * 0.1 }}
             className="flex items-center space-x-3"
           >
-            <div className="p-3 bg-purple-100 rounded-lg">
-              <Icon className="w-6 h-6 text-purple-600" />
+            <div className="rounded-lg bg-purple-100 p-3">
+              <Icon className="size-6 text-purple-600" />
             </div>
             <div>
               <div className="text-2xl font-bold text-gray-900">

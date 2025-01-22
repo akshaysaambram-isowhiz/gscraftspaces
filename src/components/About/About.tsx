@@ -13,7 +13,8 @@ export default function About() {
             <img
               src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80"
               alt="Interior Design Team"
-              className="rounded-2xl shadow-2xl"
+              className="size-full rounded-2xl shadow-2xl"
+              loading="lazy"
             />
           </motion.div>
 

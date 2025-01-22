@@ -48,7 +48,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             className="flex items-center space-x-2"
           >
-            <Sofa className="h-8 w-8 text-purple-600" />
+            <Sofa className="size-8 text-purple-600" />
             <span
               className={`hidden text-xl font-bold md:block ${isScrolled ? "text-black" : "text-white"}`}
             >

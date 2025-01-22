@@ -8,7 +8,8 @@ export default function Hero() {
         <img
           src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=80"
           alt="Interior Design"
-          className="h-full w-full object-cover"
+          className="size-full object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-purple-900/30" />
       </div>
@@ -26,11 +27,11 @@ export default function Hero() {
             transition={{ delay: 0.5, type: "spring" }}
             className="mb-6 flex items-center justify-center space-x-2"
           >
-            <Star className="h-5 w-5 text-yellow-400" />
+            <Star className="size-5 text-yellow-400" />
             <span className="rounded-full bg-white/10 px-3 py-1 text-sm font-medium backdrop-blur-sm">
               #1 Interior Design Studio in Hyderabad
             </span>
-            <Star className="h-5 w-5 text-yellow-400" />
+            <Star className="size-5 text-yellow-400" />
           </motion.div>
 
           <h1 className="mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
@@ -57,7 +58,7 @@ export default function Hero() {
               }}
             >
               <span>Get Started</span>
-              <ArrowRight className="h-5 w-5" />
+              <ArrowRight className="size-5" />
             </motion.button>
 
             <motion.button
@@ -72,7 +73,7 @@ export default function Hero() {
               }}
             >
               <span>View Projects</span>
-              <TrendingUp className="h-5 w-5" />
+              <TrendingUp className="size-5" />
             </motion.button>
           </div>
 
