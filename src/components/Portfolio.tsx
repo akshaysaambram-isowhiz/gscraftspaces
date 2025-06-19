@@ -122,7 +122,7 @@ export default function Portfolio() {
                   className="h-[400px] w-full object-cover transition-transform duration-300 group-hover:scale-110"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 flex items-end justify-start bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <div className="absolute inset-0 flex items-end justify-start bg-linear-to-t from-black/80 via-black/40 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <div className="text-white">
                     <div className="mb-2 flex items-center space-x-2">
                       <Instagram className="size-4" />

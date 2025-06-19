@@ -11,7 +11,7 @@ export default function Hero() {
           className="size-full object-cover"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-purple-900/30" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/50 via-black/40 to-purple-900/30" />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -28,13 +28,13 @@ export default function Hero() {
             className="mb-6 flex items-center justify-center space-x-2"
           >
             <Star className="size-5 text-yellow-400" />
-            <span className="rounded-full bg-white/10 px-3 py-1 text-sm font-medium backdrop-blur-sm">
+            <span className="rounded-full bg-white/10 px-3 py-1 text-sm font-medium backdrop-blur-xs">
               #1 Interior Design Studio in Hyderabad
             </span>
             <Star className="size-5 text-yellow-400" />
           </motion.div>
 
-          <h1 className="mb-6 bg-gradient-to-r from-white to-purple-300 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
+          <h1 className="mb-6 bg-linear-to-r from-white to-purple-300 bg-clip-text text-4xl font-bold text-transparent md:text-7xl">
             Level Up Your Space
             <br />
             <span className="text-purple-400">Stay Aesthetic ✨</span>
@@ -64,7 +64,7 @@ export default function Hero() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex w-full items-center space-x-2 rounded-full bg-white/10 px-8 py-3 font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20 sm:w-auto"
+              className="inline-flex w-full items-center space-x-2 rounded-full bg-white/10 px-8 py-3 font-medium text-white backdrop-blur-xs transition-colors hover:bg-white/20 sm:w-auto"
               onClick={() => {
                 const element = document.getElementById("portfolio");
                 if (element) {

@@ -60,7 +60,7 @@ function TiltCard() {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative h-96 w-72 rounded-xl bg-gradient-to-br from-indigo-300 to-purple-300"
+      className="relative h-96 w-72 rounded-xl bg-linear-to-br from-indigo-300 to-purple-300"
     >
       <div
         style={{
