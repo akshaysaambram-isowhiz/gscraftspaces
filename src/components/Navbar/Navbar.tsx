@@ -2,7 +2,7 @@ import { MobileMenu } from "@/components/Navbar/MobileMenu";
 import { navLinks } from "@/components/Navbar/navData";
 import { NavLink } from "@/components/Navbar/NavLink";
 import { motion } from "framer-motion";
-import { Menu, Sofa, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
@@ -48,7 +48,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             className="flex items-center space-x-2"
           >
-            <Sofa className="size-8 text-purple-600" />
+            <img src="/logo.png" alt="GS Craft Spaces" className="size-12" />
             <span
               className={`hidden text-xl font-bold md:block ${isScrolled ? "text-black" : "text-white"}`}
             >
@@ -67,6 +67,7 @@ export default function Navbar() {
                 {link.label}
               </NavLink>
             ))}
+            <NavLink href="/brochure.jpeg">Brochure</NavLink>
           </nav>
 
           <button

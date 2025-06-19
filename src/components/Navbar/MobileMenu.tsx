@@ -17,7 +17,7 @@ export function MobileMenu({
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="absolute left-0 right-0 top-full bg-white/90 shadow-lg backdrop-blur-lg md:hidden"
+          className="absolute top-full right-0 left-0 bg-white/90 shadow-lg backdrop-blur-lg md:hidden"
         >
           <nav className="px-4 py-2">
             {navLinks.map((link) => (
@@ -34,6 +34,13 @@ export function MobileMenu({
                 {link.label}
               </motion.a>
             ))}
+            <motion.a
+              href="/brochure.jpeg"
+              whileTap={{ scale: 0.95 }}
+              className="block rounded-lg px-4 py-3 text-base font-medium text-gray-700 transition-colors hover:bg-gray-50 hover:text-purple-600"
+            >
+              Brochure
+            </motion.a>
           </nav>
         </motion.div>
       )}
