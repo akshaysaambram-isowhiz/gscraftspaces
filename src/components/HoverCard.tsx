@@ -6,18 +6,18 @@ import {
 } from "framer-motion";
 import React, { useRef } from "react";
 
-const HoverCard = () => {
+const ROTATION_RANGE = 32.5;
+const HALF_ROTATION_RANGE = 32.5 / 2;
+
+function HoverCard() {
   return (
     <div className="grid w-full place-content-center px-4 py-6 text-slate-900">
       <TiltCard />
     </div>
   );
-};
+}
 
-const ROTATION_RANGE = 32.5;
-const HALF_ROTATION_RANGE = 32.5 / 2;
-
-const TiltCard = () => {
+function TiltCard() {
   const ref = useRef<HTMLDivElement>(null);
 
   const x = useMotionValue(0);
@@ -80,6 +80,6 @@ const TiltCard = () => {
       </div>
     </motion.div>
   );
-};
+}
 
-export default HoverCard;
+export { HoverCard, TiltCard };

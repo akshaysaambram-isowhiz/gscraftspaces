@@ -1,6 +1,6 @@
 import { Suspense, lazy } from "react";
 
-import Loading from "@/components/CutoutTextLoader";
+import { Loading } from "@/components/CutoutTextLoader";
 
 const Navbar = lazy(() => import("@/components/Navbar/Navbar"));
 const Hero = lazy(() => import("@/components/Hero"));

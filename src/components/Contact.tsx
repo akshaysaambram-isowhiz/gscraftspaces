@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Instagram, Mail, MapPin, Phone, Youtube } from "lucide-react";
 
-import HoverCard from "@/components/HoverCard";
+import { HoverCard } from "@/components/HoverCard";
 
 export default function Contact() {
   return (

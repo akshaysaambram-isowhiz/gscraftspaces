@@ -1,4 +1,4 @@
-export default function Loading() {
+export function Loading() {
   return (
     <div className="">
       <CutoutTextLoader
@@ -17,11 +17,11 @@ type CutoutTextLoaderProps = {
   imgUrl: string;
 };
 
-const CutoutTextLoader = ({
+function CutoutTextLoader({
   height,
   background,
   imgUrl,
-}: CutoutTextLoaderProps) => {
+}: Readonly<CutoutTextLoaderProps>) {
   return (
     <div className="relative" style={{ height }}>
       <div
@@ -50,4 +50,4 @@ const CutoutTextLoader = ({
       </span>
     </div>
   );
-};
+}

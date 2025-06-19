@@ -1,21 +1,21 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-interface ServiceCardProps {
+type ServiceCardProps = {
   icon: React.ReactNode;
   title: string;
   description: string;
   tag: string;
   index: number;
-}
+};
 
-export const ServiceCard: React.FC<ServiceCardProps> = ({
+export function ServiceCard({
   icon,
   title,
   description,
   tag,
   index,
-}) => {
+}: Readonly<ServiceCardProps>) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -35,4 +35,4 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
       <p className="text-gray-600">{description}</p>
     </motion.div>
   );
-};
+}

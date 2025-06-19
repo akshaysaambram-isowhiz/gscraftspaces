@@ -1,20 +1,19 @@
 import { motion } from "framer-motion";
 import { LucideIcon } from "lucide-react";
-import React from "react";
 
-interface FeatureCardProps {
+type FeatureCardProps = {
   icon: LucideIcon;
   title: string;
   description: string;
   index: number;
-}
+};
 
-export const FeatureCard: React.FC<FeatureCardProps> = ({
+export function FeatureCard({
   icon: Icon,
   title,
   description,
   index,
-}) => {
+}: Readonly<FeatureCardProps>) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -30,4 +29,4 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
       <p className="text-gray-600">{description}</p>
     </motion.div>
   );
-};
+}

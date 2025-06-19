@@ -8,7 +8,7 @@ const stats = [
   { icon: ThumbsUp, value: "98%", label: "Success Rate" },
 ];
 
-export const Stats = () => {
+export function Stats() {
   return (
     <div className="grid grid-cols-2 gap-6">
       {stats.map((stat, index) => {
@@ -36,4 +36,4 @@ export const Stats = () => {
       })}
     </div>
   );
-};
+}
