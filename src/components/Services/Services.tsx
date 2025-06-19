@@ -1,6 +1,6 @@
+import { ServiceCard } from "@/components/Services/ServiceCard";
+import { services } from "@/components/Services/serviceData";
 import { motion } from "framer-motion";
-import { ServiceCard } from "./ServiceCard";
-import { services } from "./serviceData";
 
 export default function Services() {
   return (

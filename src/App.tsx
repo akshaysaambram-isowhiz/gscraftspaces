@@ -1,15 +1,15 @@
 import { Suspense, lazy } from "react";
 
-import Loading from "./components/CutoutTextLoader";
+import Loading from "@/components/CutoutTextLoader";
 
-const Navbar = lazy(() => import("./components/Navbar/Navbar"));
-const Hero = lazy(() => import("./components/Hero"));
-const About = lazy(() => import("./components/About/About"));
-const Services = lazy(() => import("./components/Services/Services"));
-const DragCards = lazy(() => import("./components/DragCards"));
-const Portfolio = lazy(() => import("./components/Portfolio"));
-const WhyChooseUs = lazy(() => import("./components/WhyChooseUs/WhyChooseUs"));
-const Contact = lazy(() => import("./components/Contact"));
+const Navbar = lazy(() => import("@/components/Navbar/Navbar"));
+const Hero = lazy(() => import("@/components/Hero"));
+const About = lazy(() => import("@/components/About/About"));
+const Services = lazy(() => import("@/components/Services/Services"));
+const DragCards = lazy(() => import("@/components/DragCards"));
+const Portfolio = lazy(() => import("@/components/Portfolio"));
+const WhyChooseUs = lazy(() => import("@/components/WhyChooseUs/WhyChooseUs"));
+const Contact = lazy(() => import("@/components/Contact"));
 
 function App() {
   return (

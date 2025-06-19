@@ -1,10 +1,10 @@
 import {
-  Zap,
-  Target,
   Clock,
-  Sparkles,
-  Shield,
   HeartHandshake,
+  Shield,
+  Sparkles,
+  Target,
+  Zap,
 } from "lucide-react";
 
 export const features = [

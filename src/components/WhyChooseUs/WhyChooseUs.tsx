@@ -1,6 +1,6 @@
+import { FeatureCard } from "@/components/WhyChooseUs/FeatureCard";
+import { features } from "@/components/WhyChooseUs/featuresData";
 import { motion } from "framer-motion";
-import { FeatureCard } from "./FeatureCard";
-import { features } from "./featuresData";
 
 export default function WhyChooseUs() {
   return (

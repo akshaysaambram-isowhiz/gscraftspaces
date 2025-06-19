@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Instagram } from "lucide-react";
+import { useState } from "react";
 
 const projects = [
   {
@@ -59,7 +59,7 @@ export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredProjects = projects.filter((project) =>
-    selectedCategory === "All" ? true : project.category === selectedCategory,
+    selectedCategory === "All" ? true : project.category === selectedCategory
   );
 
   return (

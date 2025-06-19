@@ -1,6 +1,6 @@
+import { navLinks } from "@/components/Navbar/navData";
+import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { navLinks } from "./navData";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -17,7 +17,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
-        className="md:hidden absolute top-full left-0 right-0 bg-white/90 backdrop-blur-lg shadow-lg"
+        className="absolute left-0 right-0 top-full bg-white/90 shadow-lg backdrop-blur-lg md:hidden"
       >
         <nav className="px-4 py-2">
           {navLinks.map((link) => (
@@ -25,10 +25,10 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
               key={link.href}
               href={link.href}
               whileTap={{ scale: 0.95 }}
-              className={`block px-4 py-3 text-base font-medium rounded-lg transition-colors ${
+              className={`block rounded-lg px-4 py-3 text-base font-medium transition-colors ${
                 activeSection === link.href
-                  ? "text-purple-600 bg-purple-50"
-                  : "text-gray-700 hover:text-purple-600 hover:bg-gray-50"
+                  ? "bg-purple-50 text-purple-600"
+                  : "text-gray-700 hover:bg-gray-50 hover:text-purple-600"
               }`}
             >
               {link.label}

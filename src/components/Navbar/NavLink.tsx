@@ -1,5 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
 import { twMerge } from "tailwind-merge";
 
 interface NavLinkProps {
@@ -21,7 +21,7 @@ export const NavLink: React.FC<NavLinkProps> = ({
     className={twMerge(
       `relative px-3 py-2 text-sm font-medium transition-colors hover:text-purple-600 ${scrolled ? "text-black" : "text-white"} ${
         isActive && "text-purple-600"
-      }`,
+      }`
     )}
   >
     {children}

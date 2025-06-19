@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { MobileMenu } from "@/components/Navbar/MobileMenu";
+import { navLinks } from "@/components/Navbar/navData";
+import { NavLink } from "@/components/Navbar/NavLink";
 import { motion } from "framer-motion";
-import { Menu, X, Sofa } from "lucide-react";
-import { NavLink } from "./NavLink";
-import { MobileMenu } from "./MobileMenu";
-import { navLinks } from "./navData";
+import { Menu, Sofa, X } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

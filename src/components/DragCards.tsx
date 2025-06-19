@@ -1,5 +1,5 @@
-import { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 export default function DragCards() {
@@ -94,8 +94,8 @@ const Card = ({
     let maxZIndex = -Infinity;
 
     els.forEach((el) => {
-      let zIndex = parseInt(
-        window.getComputedStyle(el).getPropertyValue("z-index"),
+      const zIndex = parseInt(
+        window.getComputedStyle(el).getPropertyValue("z-index")
       );
 
       if (!isNaN(zIndex) && zIndex > maxZIndex) {
@@ -117,7 +117,7 @@ const Card = ({
       }}
       className={twMerge(
         "drag-elements absolute w-48 bg-neutral-200 p-1 pb-4",
-        className,
+        className
       )}
       src={src}
       alt={alt}

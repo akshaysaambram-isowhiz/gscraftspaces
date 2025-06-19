@@ -1,12 +1,12 @@
 import {
-  PaintBucket,
-  Sofa,
-  Lightbulb,
-  Ruler,
-  Palette,
-  Leaf,
   Camera,
   Coffee,
+  Leaf,
+  Lightbulb,
+  PaintBucket,
+  Palette,
+  Ruler,
+  Sofa,
 } from "lucide-react";
 
 export const services = [
