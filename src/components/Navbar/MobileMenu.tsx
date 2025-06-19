@@ -35,7 +35,7 @@ export function MobileMenu({
               </motion.a>
             ))}
             <motion.a
-              href="/brochure.jpeg"
+              href="brochure.jpeg"
               whileTap={{ scale: 0.95 }}
               className="block rounded-lg px-4 py-3 text-base font-medium text-gray-700 transition-colors hover:bg-gray-50 hover:text-purple-600"
             >

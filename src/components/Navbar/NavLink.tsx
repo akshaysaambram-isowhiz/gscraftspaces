@@ -29,7 +29,7 @@ export function NavLink({
       {isActive && (
         <motion.div
           layoutId="activeSection"
-          className="absolute -bottom-1 left-0 right-0 h-0.5 bg-purple-600"
+          className="absolute right-0 -bottom-1 left-0 h-0.5 bg-purple-600"
         />
       )}
     </motion.a>

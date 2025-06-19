@@ -48,7 +48,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             className="flex items-center space-x-2"
           >
-            <img src="/logo.png" alt="GS Craft Spaces" className="size-12" />
+            <img src="logo.png" alt="GS Craft Spaces" className="size-12" />
             <span
               className={`hidden text-xl font-bold md:block ${isScrolled ? "text-black" : "text-white"}`}
             >
@@ -67,7 +67,9 @@ export default function Navbar() {
                 {link.label}
               </NavLink>
             ))}
-            <NavLink href="/brochure.jpeg">Brochure</NavLink>
+            <NavLink href="brochure.jpeg" scrolled={isScrolled}>
+              Brochure
+            </NavLink>
           </nav>
 
           <button
